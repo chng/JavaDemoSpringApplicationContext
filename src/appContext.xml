@@ -17,12 +17,12 @@
            	
 	<bean id="chinese" class="com.bean.Chinese">
 		<property name="name" value="小明"></property>
-		<property name="age" value="10"></property>
+		<property name="age" value="-1"></property>
 	</bean>
 
-	<bean id="french" class="com.bean.French">
+	<bean id="french" class="com.bean.French" init-method="init">
 		<constructor-arg index="0" value="Von"></constructor-arg>
-		<constructor-arg index="1" value="11"></constructor-arg>
+		<constructor-arg index="1" value="159"></constructor-arg>
  	</bean>	
 </beans>
 

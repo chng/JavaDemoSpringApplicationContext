@@ -1,6 +1,10 @@
 package com.bean;
 
-public abstract class Person {
+import org.springframework.beans.factory.BeanNameAware;
+import org.springframework.beans.factory.InitializingBean;
+
+public abstract class Person implements BeanNameAware, InitializingBean
+{
 
 	String name;
 	int age;
